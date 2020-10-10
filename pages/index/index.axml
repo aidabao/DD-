@@ -1,0 +1,175 @@
+<view class="page">
+  <view class="page-description">视图容器，相当于 web 的 div 或者 react-native 的 View。</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <view class="stream">
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Chris</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">
+              欢迎使用支付宝小程序！！！
+            </view>
+            <view class="postBody__date">
+              May 20
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Jack</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">
+              @Chris 我该如何上手？
+            </view>
+            <view class="postBody__date">
+              May 21
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Chris</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">
+              你可以查看 Demo，对小程序有一个简单的了解；然后下载我们的 IDE 进行开发。
+            </view>
+            <view class="postBody__date">
+              May 22
+            </view>
+          </view>
+        </view>
+
+        <view class="post">
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <!-- hover red -->
+          <view class="postBody" hover-class="red">
+            <view class="postBody__content">
+              赞!
+            </view>
+            <view class="postBody__date" hidden>
+              June 1
+            </view>
+          </view>
+        </view>
+
+        <view class="post" hidden>
+          <view class="postUser">
+            <view class="postUser__name">Jessie</view>
+          </view>
+          <view class="postBody">
+            <view class="postBody__content">
+              赞! +1
+            </view>
+            <view class="postBody__date">
+              June 1
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- API-DEMO page/component/swiper.axml-->
+<view class="page">
+  <view class="page-description">滑块视图容器</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <swiper 
+        style="height:150px"
+        class="demo-swiper"
+        previousMargin="10px"
+        nextMargin="10px"
+        indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}"
+        vertical="{{vertical}}"
+        interval="{{interval}}"
+        circular="{{circular}}"
+      >
+        <block a:for="{{background}}">
+          <swiper-item key="swiper-item-{{index}}">
+            <view class="swiper-item bc_{{item.color}}">{{item.text}}</view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="margin-t">
+        <slider onChange="intervalChange" value="{{interval}}" show-value min="500" max="2000"/>
+        <view>interval</view>
+      </view>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="changeIndicatorDots">indicator-dots</view>
+      <view onTap="changeAutoplay">autoplay</view>
+      <view onTap="changeVertical">vertical</view>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="changeCircular">circular</view>
+    </view>
+  </view>
+</view>
+
+<!-- API-DEMO page/component/scroll-view.axml -->
+<view class="page">
+  <view class="page-description">可滚动视图区域</view>
+  <view class="page-section">
+    <view class="page-section-title">vertical scroll</view>
+    <view class="page-section-demo">
+      <scroll-view scroll-y="{{true}}" style="height: 200px;" onScrollToUpper="upper" onScrollToLower="lower" onScroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+        <view id="blue" class="scroll-view-item bc_blue"></view>
+        <view id="red"  class="scroll-view-item bc_red"></view>
+        <view id="yellow" class="scroll-view-item bc_yellow"></view>
+        <view id="green" class="scroll-view-item bc_green"></view>
+      </scroll-view>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="tap">next</view>
+      <view onTap="tapMove">move</view>
+      <view onTap="scrollToTop">scrollToTop</view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">horizontal scroll</view>
+    <view class="page-section-demo">
+      <scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%" >
+        <view id="blue2" class="scroll-view-item_H bc_blue"></view>
+        <view id="red2"  class="scroll-view-item_H bc_red"></view>
+        <view id="yellow2" class="scroll-view-item_H bc_yellow"></view>
+        <view id="green2" class="scroll-view-item_H bc_green"></view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
+
+
+<!-- API-DEMO page/component/cover-view.axml -->
+<view class="page">
+  <view class="page-description">cover-view</view>
+  <view class="page-section">
+    <view class="page-section-demo" style="position: relative;">
+      <map
+        longitude="{{longitude}}"
+        latitude="{{latitude}}"
+        scale="{{scale}}"
+        style="width: 100%; height: 200px;"
+        include-points="{{includePoints}}"
+      />
+      <cover-view class="cover-view">
+        <cover-view class="cover-view-item cover-view-item-1"></cover-view>
+        <cover-view class="cover-view-item cover-view-item-2"></cover-view>
+        <cover-view class="cover-view-item cover-view-item-3"></cover-view>
+      </cover-view>
+      <cover-image style="" src="/image/ant.png" />
+    </view>
+  </view>
+</view>
+
+
+
