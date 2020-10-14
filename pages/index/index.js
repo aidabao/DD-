@@ -16,10 +16,26 @@ Page({
       latitude: 30.266786,
       longitude: 120.10675,
     }],
+     x: 0,
+    y: 0,
   },
   onLoad(query) {
     // 页面加载
     console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
+  },
+  onButtonTap() {
+    const { x, y } = this.data;
+    if (x === 30) {
+      this.setData({
+        x: x + 1,
+        y: y + 1,
+      });
+    } else {
+      this.setData({
+        x: 30,
+        y: 30
+      });
+    }
   },
   onReady() {
     // 页面加载完成

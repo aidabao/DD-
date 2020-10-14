@@ -1,0 +1,36 @@
+/* API-DEMO page/component/text.acss */
+.page {
+  padding: 0;
+}
+
+.text-demo-title {
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.text-demo-text {
+  font-size: 36rpx;
+}
+/* API-DEMO page/component/icon.acss */
+.icon-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+/* API-DEMO page/component/progress.acss */
+progress{
+  margin-bottom: 60rpx;
+}

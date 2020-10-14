@@ -1,0 +1,68 @@
+<!-- API-DEMO page/component/text.axml -->
+<view class="page">
+  <view class="page-description">
+    <view class="text-demo-title">
+      <text class="text-demo-text">这是一段文本。\n<text>\</text><text>n</text> 可以换行。</text>
+    </view>  
+  </view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <text>{{text}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- API-DEMO page/component/icon.axml -->
+<view class="page">
+  <view class="page-description">图标</view>
+  <view class="page-section">
+    <view class="page-section-title">Type</view>
+    <view class="page-section-demo icon-list">
+      <block a:for="{{iconType}}">
+        <view class="item">
+          <icon type="{{item}}" size="45"/>
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">Size</view>
+    <view class="page-section-demo icon-list">
+      <block a:for="{{iconSize}}">
+        <view class="item">
+          <icon type="success" size="{{item}}"/>
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">Color</view>
+    <view class="page-section-demo icon-list">
+      <block a:for="{{iconColor}}">
+        <view class="item">
+          <icon type="success" size="45" color="{{item}}"/>
+          <text style="color:{{item}}">{{item}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+
+<!-- API-DEMO page/component/progress.axml -->
+<view class="page">
+  <view class="page-description">进度条</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <progress percent="20" show-info/>
+      <progress percent="40" active/>
+      <progress percent="60" stroke-width="10"/>
+      <progress percent="80" active-Color="#6abf47" backgroundColor="#f4333c" active="true" />
+    </view>
+  </view>
+</view>
+
+
