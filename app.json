@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/test/test",
-    "pages/gitTest/gitTest"
+    "pages/gitTest/gitTest",
+    "pages/git/git"
   ],
   "window": {
     "defaultTitle": "My App"
