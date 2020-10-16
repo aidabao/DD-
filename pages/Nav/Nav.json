@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "card":"/node_modules/mini-ali-ui/es/card/index"
+  }
+}

@@ -1,0 +1,4 @@
+/* API-DEMO page/component/picker-view/picker-view.acss */
+.my-picker {
+  background: #EFEFF4;
+}

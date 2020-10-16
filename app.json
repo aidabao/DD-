@@ -1,9 +1,15 @@
 {
   "pages": [
+    "pages/Nav/Nav",
     "pages/index/index",
     "pages/test/test",
     "pages/gitTest/gitTest",
-    "pages/git/git"
+    "pages/git/git",
+    "pages/FormTest/FormTest",
+    "pages/CheckBoxTest/CheckBoxTest",
+    "pages/switchTest/switchTest",
+    "pages/sliderTest/sliderTest",
+    "pages/picker-view/picker-view"
   ],
   "window": {
     "defaultTitle": "My App"

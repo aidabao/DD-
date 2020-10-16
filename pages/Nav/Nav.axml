@@ -1,0 +1,7 @@
+<view class="container">
+  <view a:for="{{navList}}">
+    <card thumb="https://gw.alipayobjects.com/mdn/rms_ce4c6f/afts/img/A*XMCgSYx3f50AAAAAAAAAAABkARQnAQ" 
+    title="{{item.name}}" onCardClick="onCardClick" info="{{item.url}}">
+    </card>
+  </view>
+</view>

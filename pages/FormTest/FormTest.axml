@@ -1,0 +1,293 @@
+<!-- API-DEMO page/component/button/button.axml -->
+<view class="page">
+  <view class="page-description">按钮</view>
+  <view class="page-section">
+    <view class="page-section-title">type-primary/ghost</view>
+    <view class="page-section-demo">
+      <button type="primary">主要操作 Normal</button>
+      <button type="primary" loading>操作</button>
+      <button type="primary" disabled>主要操作 Disable</button>
+      <button type="ghost">ghost操作</button>
+      <button type="ghost" loading>ghost操作</button>
+      <button type="ghost" disabled>ghost操作 Disable</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">type-default</view>
+    <view class="page-section-demo">
+      <button data-aspm-click="xxx">辅助操作 Normal</button>
+      <button disabled>辅助操作 Disable</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">type-warn</view>
+    <view class="page-section-demo">
+      <button type="warn">警告类操作 Normal</button>
+      <button type="warn" disabled>警告类操作 Disable</button>
+      <button type="warn" hover-class="red">hover-red</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">Size</view>
+    <view class="page-section-demo">
+      <button size="mini" loading>提交</button>
+      <button style="margin-left: 10px;" type="primary" size="mini">选项</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">open</view>
+    <view class="page-section-demo">
+      <button open-type="share">share</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">Form</view>
+    <view class="page-section-demo">
+      <form onSubmit="onSubmit" onReset="onReset">
+        <button form-type="submit" type="primary">submit</button>
+        <button form-type="reset">reset</button>
+      </form>
+    </view>
+  </view>
+</view>
+
+<!-- API-DEMO page/component/form/form.axml -->
+<view class="page">
+  <view class="page-description">表单</view>
+  <form onSubmit="onSubmit" onReset="onReset">
+    <view class="page-section">
+      <view class="page-section-title">Slider</view>
+      <view class="page-section-demo">
+        <slider value="80" name="slider" show-value />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="form-row">
+        <view class="form-row-label">Switch</view>
+        <view class="form-row-content" style="text-align: right">
+          <switch name="switch" />
+        </view>
+      </view>
+      <view class="form-line" />
+      <view class="form-row">
+        <view class="form-row-label">Input</view>
+        <view class="form-row-content">
+          <input name="input" class="input" placeholder="input something" />
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">Radio</view>
+      <view class="page-section-demo">
+        <radio-group name="radio-group">
+          <label><radio value="radio1" />radio1</label>
+          <label><radio value="radio2" />radio2</label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">Checkbox</view>
+      <view class="page-section-demo">
+        <checkbox-group name="checkbox">
+          <label><checkbox value="checkbox1" />checkbox1</label>
+          <label><checkbox value="checkbox2" />checkbox2</label>
+        </checkbox-group>
+      </view>
+      <view class="page-section-btns">
+        <view><button type="ghost" size="mini" formType="reset">Reset</button></view>
+        <view><button type="primary" size="mini" data-id="121" formType="submit">Submit</button></view>
+      </view>
+    </view>
+  </form>
+</view>
+<!-- API-DEMO page/component/label/label.axml -->
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-title">Checkbox</view>
+    <view class="page-section-demo">
+      <checkbox-group>
+        <view>
+          <label>
+            <checkbox value="AngularJS" />
+            <text> AngularJS</text>
+          </label>
+        </view>
+        <view>
+          <label>
+            <checkbox value="React" />
+            <text> React</text>
+          </label>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">Radio</view>
+    <view class="page-section-demo">
+      <radio-group>
+        <view>
+          <radio id="AngularJS" value="AngularJS" />
+          <label for="AngularJS">AngularJS</label>
+        </view>
+        <view>
+          <radio id="React" value="React" />
+          <label for="React">React</label>
+        </view>
+      </radio-group>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">label中有多个 Checkbox 时，点击 label 关联的元素选择第一个，例如点击的“Click Me”</view>
+    <view class="page-section-demo">
+      <label>
+        <checkbox>选中我</checkbox>
+        <checkbox>选不中</checkbox>
+        <checkbox>选不中</checkbox>
+        <checkbox>选不中</checkbox>
+        <view>
+          <text>Click Me</text>
+        </view>
+      </label>
+    </view>
+  </view>
+</view>
+
+<!-- API-DEMO page/component/input/input.axml -->
+<view class="page">
+  <view class="page-description">输入框</view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-label">受控聚焦</view>
+      <view class="form-row-content">
+        <input class="input" focus="{{focus}}" onFocus="onFocus" onBlur="onBlur" placeholder="input something" />
+      </view>
+    </view>
+    <view class="page-section-btns">
+      <button size="mini" onTap="bindButtonTap">聚焦</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-label"><label for="controlled">显示输入</label></view>
+      <view class="form-row-content">
+        <input class="input" id="controlled" onInput="bindKeyInput" placeholder="show input content" />
+      </view>
+    </view>
+    <view class="extra-info">你输入的是：{{inputValue}}</view>
+  </view>
+  <view class="page-section">
+    <view class="form-row">
+      <view class="form-row-label">最大长度</view>
+      <view class="form-row-content">
+        <input class="input" maxlength="10" placeholder="maxlength 10" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">收起键盘</view>
+      <view class="form-row-content">
+        <input class="input" onInput="bindHideKeyboard" placeholder="输入 123 自动收起键盘" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">输入密码</view>
+      <view class="form-row-content">
+        <input class="input" password type="text" placeholder="密码输入框" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">输入数字</view>
+      <view class="form-row-content">
+        <input class="input" type="number" placeholder="数字输入框" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">小数点键盘</view>
+      <view class="form-row-content">
+        <input class="input" type="digit" placeholder="带小数点的数字键盘" />
+      </view>
+    </view>
+    <view class="form-line" />
+    <view class="form-row">
+      <view class="form-row-label">身份证键盘</view>
+      <view class="form-row-content">
+        <input class="input" type="idcard" placeholder="身份证输入键盘" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">搜索框</view>
+    <view class="page-section-demo">
+      <view class="search-outer">
+        <input
+          class="search-input"
+          placeholder="搜索"
+          value="{{search}}"
+          onConfirm="doneSearch"
+          onInput="handleSearch"
+        />
+        <text class="search-cancel" onTap="clearSearch">取消</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- API-DEMO page/component/textarea/textarea.axml -->
+<view class="page">
+  <view class="page-description">文本框</view>
+  <view class="page-section">
+    <view class="page-section-title">受控聚焦</view>
+    <view class="page-section-demo">
+      <textarea focus="{{focus}}" onFocus="onFocus" onBlur="onBlur" placeholder="Please input something" />
+    </view>
+    <view class="page-section-btns">
+      <button type="default" size="mini" onTap="bindButtonTap">聚焦</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">自适应高度</view>
+    <view class="page-section-demo">
+      <textarea onBlur="bindTextAreaBlur" auto-height placeholder="Please input something" />
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">结合表单</view>
+    <form onSubmit="bindFormSubmit">
+      <view class="page-section-demo">
+        <textarea name="textarea" placeholder="Please input something"  />
+      </view>
+      <view class="page-section-btns">
+        <button form-type="submit" size="mini" type="primary">提交</button>
+      </view>  
+    </form>
+  </view>
+</view>
+
+<!-- API-DEMO page/component/radio/radio.axml -->
+<view class="page">
+  <view class="page-description">单选框</view>
+  <view class="page-section">
+    <view class="section section_gap">
+      <form onSubmit="onSubmit" onReset="onReset">
+        <view class="page-section-demo">
+          <radio-group class="radio-group" onChange="radioChange" name="lib">
+            <label class="radio" a:for="{{radioList}}" key="label-{{index}}">
+              <radio value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />
+              <text class="radio-text">{{item.value}}</text>
+            </label>
+          </radio-group>
+        </view>
+        <view class="page-section-btns">
+          <view><button size="mini" type="ghost" formType="reset">reset</button></view>
+          <view><button size="mini" type="primary" formType="submit">submit</button></view>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

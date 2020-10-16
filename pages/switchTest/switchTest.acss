@@ -1,0 +1,4 @@
+/* API-DEMO page/component/switch/switch.acss */
+.switch-item + .switch-item {
+  margin-top: 20rpx;
+}
