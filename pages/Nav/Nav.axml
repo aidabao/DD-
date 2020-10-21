@@ -1,7 +1,38 @@
-<view class="container">
-  <view a:for="{{navList}}">
-    <card thumb="https://gw.alipayobjects.com/mdn/rms_ce4c6f/afts/img/A*XMCgSYx3f50AAAAAAAAAAABkARQnAQ" 
-    title="{{item.name}}" onCardClick="onCardClick" info="{{item.url}}">
-    </card>
-  </view>
+<view>
+  <collapse className="demo-collapse" collapseKey="collapse2" activeKey="{{['item-21', 'item-23']}}" onChange="onChange" accordion="{{true}}">
+    <collapse-item header="表单组件" itemKey="item-21" collapseKey="collapse2">
+      <view class="item-content">
+        <view class="container">
+          <view a:for="{{navList}}">
+            <card thumb="https://gw.alipayobjects.com/mdn/rms_ce4c6f/afts/img/A*XMCgSYx3f50AAAAAAAAAAABkARQnAQ" title="{{item.name}}" onCardClick="onCardClick" info="{{item.url}}">
+            </card>
+          </view>
+        </view>
+      </view>
+    </collapse-item>
+    <collapse-item header="导航" itemKey="item-22" collapseKey="collapse2">
+      <view class="item-content content2">
+        <view>
+          <card thumb="https://gw.alipayobjects.com/mdn/rms_ce4c6f/afts/img/A*XMCgSYx3f50AAAAAAAAAAABkARQnAQ" title="navigator 页面链接" onCardClick="onCardClick" info="/pages/NavigatorTest/NavigatorTest">
+          </card>
+        </view>
+      </view>
+    </collapse-item>
+    <collapse-item header="媒体组件" itemKey="item-23" collapseKey="collapse2">
+      <view class="item-content content3">
+        <view a:for="{{VideoNavList}}">
+          <card thumb="https://gw.alipayobjects.com/mdn/rms_ce4c6f/afts/img/A*XMCgSYx3f50AAAAAAAAAAABkARQnAQ" title="{{item.name}}" onCardClick="onCardClick" info="{{item.url}}">
+          </card>
+        </view>
+      </view>
+    </collapse-item>
+    <collapse-item header="UI组件 布局导航" itemKey="item-24" collapseKey="collapse2">
+      <view class="item-content content3">
+        <view a:for="{{LayoutList}}">
+          <card thumb="https://gw.alipayobjects.com/mdn/rms_ce4c6f/afts/img/A*XMCgSYx3f50AAAAAAAAAAABkARQnAQ" title="{{item.name}}" onCardClick="onCardClick" info="{{item.url}}">
+          </card>
+        </view>
+      </view>
+    </collapse-item>
+  </collapse>
 </view>

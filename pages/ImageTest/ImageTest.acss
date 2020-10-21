@@ -1,0 +1,10 @@
+/* API-DEMO page/component/image/image.acss */
+.page-section-demo {
+  display: flex;
+  justify-content: space-around;
+}
+.image {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}

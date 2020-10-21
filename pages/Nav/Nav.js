@@ -5,7 +5,16 @@ Page({
       {name:'checkbox 多项选择器',url:'/pages/CheckBoxTest/CheckBoxTest'},
       {name:'switch 单选开关',url:'/pages/switchTest/switchTest'},
       {name:'slider 滑动选择器',url:'/pages/sliderTest/sliderTest'},
-      {name:'picker-view 滚动选择器',url:'/pages/picker-view/picker-view'}
+      {name:'picker-view 滚动选择器',url:'/pages/picker-view/picker-view'},
+      {name:'picker 底部弹起的滚动选择器',url:'/pages/picker/picker'},
+    ],
+    VideoNavList:[
+      {name:'image 图片',url:'/pages/ImageTest/ImageTest'},
+      {name:'video 视频',url:'/pages/VideoTest/VideoTest'}
+    ],
+    LayoutList:[
+      {name:'Container 容器',url:'/pages/ContainerTest/ContainerTest'},
+      {name:'Title 模块标题',url:'/pages/TitleTest/TitleTest'}
     ]
   },
   onLoad() {},

@@ -1,0 +1,7 @@
+{
+ "defaultTitle": "支付宝Container",
+ "usingComponents": {
+   "container": "/node_modules/mini-ali-ui/es/container/index",
+   "title": "/node_modules/mini-ali-ui/es/title/index"
+ }
+}

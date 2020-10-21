@@ -1,5 +1,7 @@
 {
   "usingComponents":{
-    "card":"/node_modules/mini-ali-ui/es/card/index"
+    "card":"/node_modules/mini-ali-ui/es/card/index",
+    "collapse": "/node_modules/mini-ali-ui/es/collapse/index",
+    "collapse-item": "/node_modules/mini-ali-ui/es/collapse/collapse-item/index"
   }
 }
