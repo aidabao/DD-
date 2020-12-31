@@ -1,3 +1,18 @@
-<view>
-  New Page
-</view>
+<title
+ hasLine="true"
+ type="more"
+ onActionTap="titleMore"
+>内部标题无 icon 展开气泡菜单</title>
+<title
+ hasLine="true"
+ iconURL="https://t.alipayobjects.com/images/T1HHFgXXVeXXXXXXXX.png"
+ type="close"
+ onActionTap="titleClose"
+>内部标题可关闭</title>
+<title
+ hasLine="true"
+ className="changeColor"
+ iconURL="https://gw.alipayobjects.com/mdn/miniProgram_mendian/afts/img/A*wiFYTo5I0m8AAAAAAAAAAABjAQAAAQ/original"
+ type="arrow"
+ onActionTap="titleGo"
+>使用class修改样式</title>

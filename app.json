@@ -15,7 +15,9 @@
     "pages/ImageTest/ImageTest",
     "pages/VideoTest/VideoTest",
     "pages/ContainerTest/ContainerTest",
-    "pages/TitleTest/TitleTest"
+    "pages/TitleTest/TitleTest",
+    "pages/ListTest/ListTest",
+    "pages/ListSecond/ListSecond"
   ],
   "window": {
     "defaultTitle": "My App"

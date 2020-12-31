@@ -1,0 +1,7 @@
+{
+ "defaultTitle": "List 列表",
+ "usingComponents": {
+   "list": "/node_modules/mini-ali-ui/es/list/index",
+   "list-item": "/node_modules/mini-ali-ui/es/list/list-item/index"
+ }
+}

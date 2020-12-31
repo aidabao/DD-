@@ -14,7 +14,9 @@ Page({
     ],
     LayoutList:[
       {name:'Container 容器',url:'/pages/ContainerTest/ContainerTest'},
-      {name:'Title 模块标题',url:'/pages/TitleTest/TitleTest'}
+      {name:'Title 模块标题',url:'/pages/TitleTest/TitleTest'},
+      {name:'List 列表',url:'/pages/ListTest/ListTest'},
+      {name:'List-secondary 列表次级信息元素',url:'/pages/ListSecond/ListSecond'}
     ]
   },
   onLoad() {},

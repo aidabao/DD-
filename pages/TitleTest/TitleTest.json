@@ -1,1 +1,6 @@
-{}
+{
+ "defaultTitle": "Title 模块标题",
+ "usingComponents": {
+   "title": "/node_modules/mini-ali-ui/es/title/index"
+ }
+}
